@@ -31,7 +31,10 @@ const ForgetPassword = async (req, res) => {
       message: "something went wrong!",
     });
   } catch (err) {
-    return res.status(500).json(err.message);
+    return res.status(500).json({
+      success: false,
+      message: err.message,
+    });
   }
 };
 export default ForgetPassword;

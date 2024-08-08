@@ -1,17 +1,22 @@
-import Users from '../../models/users';
+import Users from "../../models/users";
 
 export const ResetPassword = async (req, res) => {
   try {
-    const {
-      user: { email },
-      body: { password }
-    } = req;
-    return await Users.updateOne(
-      { email },
-      { $set: { password: password } }
-    ).then((result) => res.status(200).json('password updated successfully'));
+    const { email } = req.user;
+    const { password } = req.body;
+
+    const data = await Users.updateOne({ email }, { password: password });
+    
+    return res.status(200).json({
+      data,
+      success: true,
+      message: "password updated successfully",
+    });
   } catch (err) {
-    return res.status(500).json(err.message);
+    return res.status(500).json({
+      success: false,
+      message: err.message,
+    });
   }
 };
 export default ResetPassword;
