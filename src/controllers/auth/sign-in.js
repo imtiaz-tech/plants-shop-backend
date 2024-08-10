@@ -4,9 +4,7 @@ const SignIn = async (req, res) => {
   try {
     if (req.error) return res.status(401).json(req.error);
     const user = req.user;
-
-    const token = generateTokenResponse(req.user);
-
+    const token = generateTokenResponse(user);
     return res.status(200).json({
       data: {
         token,

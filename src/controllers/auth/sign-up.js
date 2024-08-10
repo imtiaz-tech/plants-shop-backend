@@ -17,18 +17,14 @@ const SignUp = async (req, res) => {
         .json({ success: false, message: "email already exist" });
     }
 
-    user = new Users({
+    const result = await Users.create({
       name,
       email,
-      password: password,
+     password,
     });
-    const result = await user.save();
     const token = generateTokenResponse(result);
     return res.status(200).json({
-      data: {
-        token,
-        user: result,
-      },
+      data: { token, user: result },
       success: true,
       message: "Signup successful!",
     });

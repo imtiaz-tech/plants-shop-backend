@@ -6,7 +6,7 @@ const schema = new Schema(
     name: String,
     email: String,
     password: String,
-    userType: { type: String, default: 'owner' }
+    userType: { type: String, default: 'user' }
   },
   { timestamps: true }
 );

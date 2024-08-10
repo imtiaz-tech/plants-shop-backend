@@ -23,4 +23,5 @@ router.post('/signin', loginCheck, SignIn);
 router.post('/signup', SignUp);
 router.post('/forgetpassword', ForgetPassword);
 router.put('/resetpassword', authenticateAuthToken, ResetPassword);
+
 export default router;
