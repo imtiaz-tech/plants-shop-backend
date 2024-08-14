@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-
+import mongoose from "mongoose";
+import fixture from "./fixture";
 const { MONGO_URL } = process.env;
 
 const options = {
@@ -14,11 +14,12 @@ const setupDatabase = () => {
   ) {
     mongoose
       .connect(MONGO_URL, options)
-      .then(() => {
-        console.info('INFO - MongoDB Database connected.');
+      .then(async () => {
+        console.info("INFO - MongoDB Database connected.");
+        await fixture();
       })
       .catch((err) =>
-        console.log('ERROR - Unable to connect to the database:', err)
+        console.log("ERROR - Unable to connect to the database:", err)
       );
   }
 };

@@ -27,10 +27,8 @@ const LocalLoginStrategy = new LocalStrategy(
     passReqToCallback: true,
   },
   async (req, email, password, done) => {
-    console.log("🚀 ~ email:", email)
     try {
       const user = await Users.findOne({ email });
-      console.log("🚀 ~ user:", user)
       if (!user) {
         return done(null, false, {
           error: "Your login details could not be verified. Please try again.",

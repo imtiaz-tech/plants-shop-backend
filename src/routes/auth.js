@@ -4,7 +4,7 @@ import {
   SignIn,
   SignUp,
   ForgetPassword,
-  ResetPassword
+  ResetPassword,
 } from '../controllers/auth';
 import { authenticateAuthToken } from '../middlewares/auth';
 
