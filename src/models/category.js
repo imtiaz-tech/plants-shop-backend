@@ -1,13 +1,16 @@
 import mongoose, { Schema } from "mongoose";
 
-const schema = new Schema({
-  name: {
-    type: String,
-    index: true,
-    unique: true,
+const schema = new Schema(
+  {
+    name: {
+      type: String,
+      index: true,
+      unique: true,
+    },
+    status: Boolean,
   },
-  status: Boolean,
-});
+  { timestamps: true }
+);
 
 const Category = mongoose.model("category", schema);
 export default Category;
