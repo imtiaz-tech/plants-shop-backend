@@ -6,7 +6,8 @@ import deleteSingleCategory from "./delete-single-category";
 import addProduct from "./add-product";
 import getProducts from "./get-products";
 import deleteSingleProduct from "./delete-single-product";
-
+import getSingleProduct from "./get-single-product"
+import updateSingleProduct from "./update-single-product";
 export {
   addCategory,
   getCategories,
@@ -16,4 +17,5 @@ export {
   addProduct,
   getProducts,
   deleteSingleProduct,
+  getSingleProduct,updateSingleProduct
 };

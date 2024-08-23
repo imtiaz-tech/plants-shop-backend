@@ -9,6 +9,8 @@ import {
   deleteSingleCategory,
   addProduct,
   deleteSingleProduct,
+  getSingleProduct,
+  updateSingleProduct
 } from "../controllers/products";
 
 const router = express.Router();
@@ -21,5 +23,7 @@ router.delete("/delete-single-category/:id", deleteSingleCategory);
 router.post("/add-product", addProduct);
 router.get("/get-products", getProducts);
 router.delete("/delete-single-product/:id", deleteSingleProduct);
+router.get("/get-single-product/:id",getSingleProduct);
+router.patch("/update-single-product/:id", updateSingleProduct);
 
 export default router;
