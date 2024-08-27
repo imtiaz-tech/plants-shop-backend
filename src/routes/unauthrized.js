@@ -1,5 +1,5 @@
 import express from "express";
-import { getCategories,getProducts } from "../controllers/products1";
+import { getCategories,getProducts } from "../controllers/unauthrized";
 
 
 const router = express.Router();
