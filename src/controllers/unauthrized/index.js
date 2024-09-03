@@ -1,4 +1,4 @@
 import getCategories from "./get-categories";
 import getProducts from "./get-products";
-
-export { getCategories, getProducts };
+import getSingleProduct from "./get-single-product";
+export { getCategories, getProducts,getSingleProduct};
