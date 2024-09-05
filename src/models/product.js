@@ -1,5 +1,4 @@
 import mongoose, { Schema } from "mongoose";
-import Category from "./category";
 
 const schema = new Schema({
   name: String,
@@ -19,5 +18,5 @@ const schema = new Schema({
   image: String,
 });
 
-const Product = mongoose.model("Product", schema);
+const Product = mongoose.model("products", schema);
 export default Product;
