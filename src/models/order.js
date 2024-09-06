@@ -5,7 +5,6 @@ const schema = new Schema({
   billingDetails: {
     firstName: String,
     lastName: String,
-    companyName: String,
     address: String,
     apartmentAddress: String,
     city: String,
