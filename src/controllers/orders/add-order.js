@@ -5,7 +5,6 @@ const addOrder = async (req, res) => {
     const {
       firstName,
       lastName,
-      companyName,
       address,
       apartmentAddress,
       city,
@@ -22,7 +21,6 @@ const addOrder = async (req, res) => {
       billingDetails: {
         firstName: firstName,
         lastName: lastName,
-        companyName: companyName,
         address: address,
         apartmentAddress: apartmentAddress,
         city: city,
