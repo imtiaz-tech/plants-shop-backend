@@ -10,7 +10,7 @@ import {
   addProduct,
   deleteSingleProduct,
   getSingleProduct,
-  updateSingleProduct
+  updateSingleProduct,
 } from "../controllers/products";
 
 const router = express.Router();

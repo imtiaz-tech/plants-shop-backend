@@ -14,6 +14,11 @@ const schema = new Schema({
     email: String,
     notes: String,
   },
+  status: {
+    type: String,
+    default: "Pending",
+  },
+  comments: String,
   cart: [
     {
       productId: { type: mongoose.Schema.Types.ObjectId, ref: "products" },
