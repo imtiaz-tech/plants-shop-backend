@@ -9,9 +9,9 @@ const schema = new Schema(
       index: true,
       unique: true,
     },
-    status: {
-      type: String,
-      default: "Active",
+    isActive: {
+      type: Boolean,
+      default: true,
     },
     password: String,
     userType: { type: String, default: "user" },
