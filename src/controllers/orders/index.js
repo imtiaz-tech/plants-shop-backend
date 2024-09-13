@@ -3,9 +3,6 @@ import getOrders from "./get-orders";
 import getSingleOrder from "./get-single-order";
 import updateOrderStatus from "./update-order-status";
 import getUsers from "./get-users";
-import getOrderByUserId from "./get-order-by-user-id";
 import updateUserStatus from "./update-user-status";
 
-export {addOrder,getOrders,getSingleOrder,updateOrderStatus,
-    getUsers,getOrderByUserId,updateUserStatus
-}
+export { addOrder, getOrders, getSingleOrder, updateOrderStatus, getUsers, updateUserStatus };

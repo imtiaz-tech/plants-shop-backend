@@ -8,7 +8,6 @@ router.get("/get-orders", getOrders);
 router.get("/get-single-order/:id", getSingleOrder);
 router.post("/update-order-status/:id", updateOrderStatus);
 router.get("/get-users", getUsers);
-router.get("/get-order-by-user-id/:id", getOrderByUserId);
 router.post("/update-user-status/:id", updateUserStatus);
 
 
