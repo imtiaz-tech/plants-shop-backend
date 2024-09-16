@@ -19,7 +19,7 @@ const schema = new Schema(
   { timestamps: true }
 );
 
-schema.pre("save", function (next) {
+schema.pre("save", async function (next) {
   const user = this;
   if (!user.isModified("password")) return next();
   user.password = bcrypt.hashSync(this.password, 10);

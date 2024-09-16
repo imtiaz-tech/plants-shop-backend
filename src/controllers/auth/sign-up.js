@@ -12,15 +12,13 @@ const SignUp = async (req, res) => {
 
     let user = await Users.findOne({ email });
     if (user) {
-      return res
-        .status(400)
-        .json({ success: false, message: "email already exist" });
+      return res.status(400).json({ success: false, message: "email already exist" });
     }
 
     const result = await Users.create({
       name,
       email,
-     password,
+      password,
     });
     const token = generateTokenResponse(result);
     return res.status(200).json({
