@@ -9,6 +9,11 @@ const schema = new Schema(
       index: true,
       unique: true,
     },
+    
+      lastName: String,
+      city: String,
+      phone: Number,
+    
     isActive: {
       type: Boolean,
       default: true,

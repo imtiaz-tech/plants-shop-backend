@@ -6,7 +6,6 @@ const changeUserPassword = async (req, res) => {
     const { password } = req.body;
     user.password = password;
     const data = await user.save();
-    console.log("🚀 ~ changeUserPassword ~ data:", data);
     return res.status(200).json({
       data,
       message: "Change Password Succesfully",
