@@ -4,4 +4,7 @@ import ForgetPassword from "./forget-password";
 import ResetPassword from "./reset-password";
 import changeUserPassword from "./change-user-password";
 import changeUserDetails from "./change-user-details";
-export { SignIn, SignUp, ForgetPassword, ResetPassword,changeUserPassword,changeUserDetails };
+import changeUserAddressDetails from "./change-user-address-details";
+export { SignIn, SignUp, ForgetPassword, ResetPassword,changeUserPassword,
+    changeUserDetails,changeUserAddressDetails
+ };

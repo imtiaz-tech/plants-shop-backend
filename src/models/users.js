@@ -13,6 +13,10 @@ const schema = new Schema(
       lastName: String,
       city: String,
       phone: Number,
+      country:String,
+      state:String,
+      postcode:Number,
+      streetAddress:String,
     
     isActive: {
       type: Boolean,
