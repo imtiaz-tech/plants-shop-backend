@@ -4,13 +4,14 @@ const changeUserAddressDetails = async (req, res) => {
   try {
     const user = req.user;
     const { country,state,
-    postcode,streetAddress } = req.body;
+    postcode,streetAddress,apartmentAddress } = req.body;
     
     user.country=country;
     user.state=state;
     user.postcode=postcode;
     user.streetAddress=streetAddress;
-
+    user.apartmentaddress=apartmentAddress;
+    
     const data = await user.save();
     return res.status(200).json({
       data,

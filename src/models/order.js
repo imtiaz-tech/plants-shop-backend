@@ -6,6 +6,7 @@ const schema = new Schema(
     billingDetails: {
       firstName: String,
       lastName: String,
+      country:String,
       address: String,
       apartmentAddress: String,
       city: String,

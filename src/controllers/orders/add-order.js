@@ -5,6 +5,7 @@ const addOrder = async (req, res) => {
     const {
       firstName,
       lastName,
+      country,
       address,
       apartmentAddress,
       city,
@@ -21,6 +22,7 @@ const addOrder = async (req, res) => {
       billingDetails: {
         firstName: firstName,
         lastName: lastName,
+        country:country,
         address: address,
         apartmentAddress: apartmentAddress,
         city: city,

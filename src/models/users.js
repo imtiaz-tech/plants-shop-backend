@@ -17,7 +17,7 @@ const schema = new Schema(
       state:String,
       postcode:Number,
       streetAddress:String,
-    
+      apartmentaddress:String,
     isActive: {
       type: Boolean,
       default: true,
