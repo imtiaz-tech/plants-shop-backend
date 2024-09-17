@@ -7,7 +7,6 @@ import {
   ResetPassword,
   changeUserPassword,
   changeUserDetails,
-  changeUserAddressDetails
 } from '../controllers/auth';
 import { authenticateAuthToken } from '../middlewares/auth';
 
@@ -28,6 +27,5 @@ router.post('/forgetpassword', ForgetPassword);
 router.put('/resetpassword', authenticateAuthToken, ResetPassword);
 router.patch("/change-user-password", authenticateAuthToken, changeUserPassword);
 router.patch("/change-user-details", authenticateAuthToken, changeUserDetails);
-router.patch("/change-user-address-details", authenticateAuthToken, changeUserAddressDetails);
 
 export default router;

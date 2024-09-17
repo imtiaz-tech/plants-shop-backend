@@ -4,20 +4,21 @@ import bcrypt from "bcryptjs";
 const schema = new Schema(
   {
     name: String,
+    lastName: String,
     email: {
       type: String,
       index: true,
       unique: true,
     },
-    
-      lastName: String,
+    phone: Number,
+    address: {
+      streetAddress: String,
+      apartmentaddress: String,
       city: String,
-      phone: Number,
-      country:String,
-      state:String,
-      postcode:Number,
-      streetAddress:String,
-      apartmentaddress:String,
+      state: String,
+      postcode: Number,
+      country: String,
+    },
     isActive: {
       type: Boolean,
       default: true,
