@@ -10,6 +10,7 @@ const getCategories = async (req, res) => {
         message: "Get categories Succesfully",
       });
     } catch (error) {
+      console.log("🚀 ~ getCategories ~ error:", error)
       return res.status(500).json({ success: false, message: error.message });
     }
   };

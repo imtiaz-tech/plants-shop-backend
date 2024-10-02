@@ -33,6 +33,7 @@ const getProducts = async (req, res) => {
       message: "Get Products Succesfully",
     });
   } catch (error) {
+    console.log("🚀 ~ getProducts ~ error:", error)
     return res.status(500).json({ success: false, message: error.message });
   }
 };

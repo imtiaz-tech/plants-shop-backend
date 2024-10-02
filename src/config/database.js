@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import fixture from "./fixture";
 const { MONGO_URL } = process.env;
+console.log("🚀 ~ MONGO_URL:", MONGO_URL)
 
 const options = {
   useNewUrlParser: true,
