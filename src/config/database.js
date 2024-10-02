@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 import fixture from "./fixture";
-const { MONGO_URL } = process.env;
+const { MONGO_URL, JWT_SECRET } = process.env;
 console.log("🚀 ~ MONGO_URL:", MONGO_URL)
+console.log("🚀 ~ JWT_SECRET:", JWT_SECRET)
 
 const options = {
   useNewUrlParser: true,
