@@ -9,8 +9,8 @@
     "stage:deploy": "npm run stage:build && mup deploy --config=./deploy/mup.staging.js",
     "stage:reconfig": "mup reconfig --config=./deploy/mup.staging.js",
     "stage:logs": "mup logs --config=./deploy/mup.staging.js --tail 500 -f",
-    "stage:build": "rm -rf dist && webpack --config webpack.babel.js --progress",
-    "stage:start": "node ./dist/index.js"
+    "build": "rm -rf public && webpack --config webpack.babel.js --progress",
+    "stage:start": "node ./public/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "http": "^0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "moment": "^2.30.1",

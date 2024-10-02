@@ -5,7 +5,7 @@ const config = {
   entry: ['babel-polyfill', path.resolve(__dirname, 'index.js')],
   mode: 'production',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     publicPath: '/',
     filename: 'index.js'
   },
