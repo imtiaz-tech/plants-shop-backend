@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
-
+//table schema for Order in database
+//it has two fields name,status
 const schema = new Schema(
   {
     userId: { type: mongoose.Schema.Types.ObjectId, ref: "users" },

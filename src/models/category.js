@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
-
+//table schema for category in database
+//it has two fields name,status
 const schema = new Schema(
   {
     name: {

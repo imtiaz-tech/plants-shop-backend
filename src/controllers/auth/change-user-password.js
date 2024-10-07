@@ -1,5 +1,7 @@
 import Users from "../../models/users";
-
+//changeUserPassword api used for change user password in database it gets 3 parameters from frontend { password } in req.body 
+//this api used in MyAccount component
+//this api response is return change user password in  database
 const changeUserPassword = async (req, res) => {
   try {
     const user = req.user;

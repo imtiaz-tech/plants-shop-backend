@@ -1,5 +1,7 @@
 import Product from "../../models/product";
-
+//getSingleProduct api used for get single Product from database it gets 1 parameters from frontend {id} req.params
+//this api response is return single Product by id from database 
+//this api used in single-product/index component for show product web project
 const getSingleProduct = async (req, res) => {
   try {
     const { id } = req.params;

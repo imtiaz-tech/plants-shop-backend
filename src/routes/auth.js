@@ -11,7 +11,7 @@ import {
 import { authenticateAuthToken } from '../middlewares/auth';
 
 const router = express.Router();
-
+//loginCheck function run before signIn user if user not signup
 const loginCheck = (req, res, next) => {
   passport.authenticate('local', (err, user, info) => {
     if (!user) {

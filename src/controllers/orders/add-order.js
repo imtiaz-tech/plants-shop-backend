@@ -1,5 +1,7 @@
 import Order from "../../models/order";
-
+//addOrder api used for add order to database it gets 12 parameters from frontend {firstName,lastName,country,address,apartmentAddress,city,state,postCode,phoneNumber,email,notes,cart} in req.body 
+//this api response is save Order in database in product Table
+//this api used in Checkout component web project
 const addOrder = async (req, res) => {
   try {
     const {

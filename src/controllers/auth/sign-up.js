@@ -1,6 +1,8 @@
 import Users from "../../models/users";
 import { generateTokenResponse } from "../../middlewares/auth";
-
+//SignUp api used for add user to database it gets 3 parameters from frontend {name,email,password} in req.body
+//this api used in Register component for signup
+//this api response is return add user in  database
 const SignUp = async (req, res) => {
   try {
     const { name, email, password } = req.body;

@@ -1,5 +1,7 @@
 import Category from "../../models/category";
-
+//getSingleCategory api used for get single category from database it gets 1 parameters from frontend id req.params
+//this api response is return single category from database 
+//this api used in CategoriesEdit component for edit category Dashboard project
 const getSingleCategory = async (req, res) => {
   try {
     const { id } = req.params;

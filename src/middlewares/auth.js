@@ -20,7 +20,7 @@ const authenticateAuthToken = passport.authenticate("jwt", {
 });
 
 // ============================ Local Login Strategy ============================ //
-
+//LocalLoginStrategy fuction called when user signIn this function checked if user not exist in users tables it shows error 
 const LocalLoginStrategy = new LocalStrategy(
   {
     usernameField: "email",

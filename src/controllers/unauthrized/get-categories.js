@@ -1,5 +1,8 @@
 import Category from "../../models/category";
 
+//getCategories api used for get categories from database 
+//this api response is return categories from database 
+//this api used in ShopCategories component for show categories on shop page of web project
 
 const getCategories = async (req, res) => {
     try {
@@ -10,7 +13,6 @@ const getCategories = async (req, res) => {
         message: "Get categories Succesfully",
       });
     } catch (error) {
-      console.log("🚀 ~ getCategories ~ error:", error)
       return res.status(500).json({ success: false, message: error.message });
     }
   };
